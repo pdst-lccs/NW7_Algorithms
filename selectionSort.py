@@ -1,3 +1,7 @@
+#LCCS
+#April 2023
+#Selection search algorithm
+
 # Initialise an unsorted list
 the_list = [9, 6, 10, 4, 8, 5, 7]
 print("Unsorted:", the_list)
@@ -17,3 +21,4 @@ for i in range(len(the_list)):
     
 # Display the sorted list
 print("Sorted:", the_list)
+

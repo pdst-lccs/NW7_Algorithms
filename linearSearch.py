@@ -5,7 +5,7 @@
 def linear_search(v, L):      #function with 2 parameters, L is list, v is what we're searching for
     for i in range(len(L)):   #iterates through the list L
         if L[i] == v:
-            return i          #returns the position of what we're looking for!
+            return i          #returns the position of the what we're looking for!
         
     return -1    #not found
 

@@ -1,31 +1,31 @@
 #LCCS
 #April 2023
-#Binary search algorithm
+#Binary Search algorithm
 
+import random
 def binary_search(v, L):
- 
+    global comparisons
     low = 0
     high = len(L)-1
- 
     while (low <= high):
-        mid = (low+high)//2
-        
-        if L[mid] == v:
-            return mid
-        elif L[mid] < v:
-            low = mid + 1
+        index = (low+high)//2
+        comparisons = comparisons + 1
+
+        if L[index] == v:
+            return index
+        elif L[index] < v:
+            low = index + 1
         else:
-            high = mid - 1
-            
-    return -1 
+            high = index - 1
+    return -1
 
-# Driver code ...
-keys = [2, 4, 5, 7, 8, 9, 12, 14, 17, 19, 22, 25, 27, 28, 33, 37]
-argument = int(input("Enter a target value: "))
- 
-result = binary_search(argument, keys)
+# Driver code (test harness)...
+print("%s\t\t %s\t\t %s" %("List Size (N)", "Found Index", "#Comparisons"))
 
-if (result != -1):
-    print("%d found at position %d" %(argument, result))
-else:
-    print("%d not found. Return value is %d" %(argument, result))
+for list_size in [1, 10, 100, 1000, 10000, 100000, 1000000]:
+    some_list = list(range(list_size))
+    comparisons = 0
+    target = -1 # worst case because -1 never exists
+#    target = random.randrange(len(some_list)) #average case
+    pos = binary_search(target, some_list)
+    print("%d\t\t %d\t\t %d" %(len(some_list), pos, comparisons))

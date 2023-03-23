@@ -1,3 +1,7 @@
+#LCCS
+#April 2023
+#Analysis of Selection search algorithm p81
+
 import random
 
 def simple_selection_sort(L):

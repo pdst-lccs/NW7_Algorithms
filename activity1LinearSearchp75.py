@@ -13,6 +13,7 @@ def linear_search(v, L):
             return index
 
     return -1 # not found
+
 # Driver code ...
 print("%s\t\t %s\t\t %s" %("List Size", "Found Index", "#Comparisons"))
 
