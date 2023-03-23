@@ -15,7 +15,7 @@ argument = int(input("Enter a target value:"))
 
 result = linear_search(argument, keys)
 
-if (result != len(keys)):
+if (result != -1):
     print("%d found at position %d" %(argument, result))
 else:
     print("%d not found. Return value is %d" %(argument, result))
