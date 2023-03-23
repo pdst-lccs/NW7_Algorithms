@@ -1,6 +1,6 @@
 #LCCS
 #April 2023
-#Binary Search algorithm
+#Analysis of Binary Search algorithm p77
 
 import random
 def binary_search(v, L):

@@ -1,6 +1,6 @@
 #LCCS
 #April 2023
-#Linear Search algorithm
+#Analysis of Linear Search algorithm p75
 
 import random
 
